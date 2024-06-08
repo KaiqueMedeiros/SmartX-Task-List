@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+h4{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #1c242c;
+    cursor: pointer;
+}
+
+.bodyEscuro h4 {
+    color: white;
+}
+
+h4:hover{
+    transform: translateY(-4px);
+    transition-duration: 0.3s;
+    color: #fbb31c;
+}
+
+.bodyEscuro{
+    background-color: #1c242c;
+}
+
+body{
+    transition: background-color 0.4s ease;
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 600px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px auto 0;
+}
+
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 450px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #1c242c;
+    color: #ffff;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    float: right;
+}
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+
+}
+
+.task{
+    background-color: #fbb31c;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    
+}
+
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+#LogoSmart {
+    width: 200px;
+    margin: 10px;
+    align-items: center;
+    height: 35px;
+    opacity: 1;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    color: #fbb31c;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d09c2c;
+}
+
+.button-add-task:hover{
+    background-color: #fbb31c;
+    cursor: pointer;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+li:hover{
+    transform: translateY(-4px);
+    transition-duration: 0.3s;
+}
+
